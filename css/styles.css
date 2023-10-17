@@ -31,6 +31,7 @@ p {
 
 img {
   display: block;
+  max-width: 100%;
 }
 
 input {
@@ -724,4 +725,24 @@ footer > div > a {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
+}
+
+@media (min-resolution: 96dpi) {
+  .title-main-section {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../images/background.jpg");
+  }
+}
+
+@media (min-resolution: 192dpi) {
+  .title-main-section {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../images/background@x2.jpg");
+  }
 }
