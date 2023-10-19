@@ -433,6 +433,13 @@ ul > li > a {
   padding: 100px 0;
 }
 
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 72px;
+  justify-content: center;
+}
+
 .text-footer {
   font-size: 16px;
   line-height: 1.5;
@@ -456,8 +463,6 @@ ul > li > a {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 18px;
-  margin-left: 0;
-  margin-right: 0;
 }
 
 .footer-subtitle {
@@ -473,8 +478,6 @@ ul > li > a {
 .footer-social-icons {
   display: flex;
   gap: 16px;
-  justify-content: center;
-  margin-bottom: 72px;
 }
 
 .footer-social-icons-items {
@@ -823,12 +826,17 @@ ul > li > a {
   }
 
   .footer-container {
-    display: flex;
-    align-items: baseline;
-    flex-direction: row;
-    flex-wrap: wrap;
     max-width: 580px;
     gap: 72px 24px;
+    justify-content: flex-start;
+  }
+
+  .logo-footer {
+    text-align: left;
+  }
+
+  .footer-subtitle {
+    text-align: left;
   }
 }
 
@@ -900,10 +908,9 @@ ul > li > a {
   }
 
   .footer-container {
-    display: flex;
-    align-items: baseline;
     flex-wrap: nowrap;
     gap: 0;
+    align-items: baseline;
   }
   .footer-left {
     margin-right: 120px;
@@ -919,9 +926,5 @@ ul > li > a {
 
   .text-footer {
     width: 264px;
-  }
-
-  .footer-subtitle {
-    text-align: left;
   }
 }
