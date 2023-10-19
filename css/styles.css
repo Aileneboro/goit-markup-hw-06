@@ -586,8 +586,6 @@ ul > li > a {
   transform: translate(-50%, -50%);
   width: 288px;
   min-height: 623px;
-  /* width: 408px; */
-  /* min-height: 584px; */
   border-radius: 4px;
   background-color: #fcfcfc;
   padding: 72px 16px 24px 16px;
@@ -718,9 +716,16 @@ ul > li > a {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-left: 24px;
 }
 
 .privacy-span {
+  position: absolute;
+  left: 16px;
   width: 16px;
   height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
@@ -746,6 +751,9 @@ ul > li > a {
   line-height: 1.33;
   letter-spacing: 0.04em;
   text-decoration-line: underline;
+  /* position: absolute;
+  left: 24px;
+  top: 14px; */
 }
 
 .modal-window-btn {
@@ -839,6 +847,11 @@ ul > li > a {
 
   .footer-subtitle {
     text-align: left;
+  }
+
+  .modal {
+    width: 408px;
+    min-height: 584px;
   }
 }
 
