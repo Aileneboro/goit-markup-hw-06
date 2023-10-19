@@ -159,6 +159,19 @@ ul > li > a {
   letter-spacing: 0.02em;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 /* SECTION ORDER */
 
 .button-order {
@@ -209,54 +222,42 @@ ul > li > a {
   background-position: center;
   background-size: cover;
   padding: 72px 0;
+  margin: 0 auto;
 }
 
 /* Qualities */
 
+.qualities-section {
+  padding: 96px 0;
+}
+
 .qualities-list {
   display: flex;
-  gap: 24px;
-}
-
-.qualities-item-icons {
-  height: 112px;
-  border-radius: 4px;
-  border: 1px solid #8e8f99;
-  background: #f4f4fd;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 8px;
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+  flex-wrap: wrap;
+  gap: 72px;
 }
 
 .qualities-item {
-  max-width: 264px;
+  width: 100%;
+}
+
+.qualities-item-icons {
+  display: none;
 }
 
 .subtitle {
   color: #2e2f42;
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 1.2;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
   letter-spacing: 0.02em;
   margin-bottom: 8px;
+  text-align: center;
 }
 
 .text {
   font-size: 16px;
+  font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
@@ -749,6 +750,18 @@ footer > div > a {
     max-width: 496px;
     margin: 0 auto 36px auto;
   }
+
+  .qualities-list {
+    column-gap: 24px;
+  }
+
+  .qualities-item {
+    width: calc((100% - 24px) / 2);
+  }
+
+  .subtitle {
+    text-align: left;
+  }
 }
 
 @media screen and (min-width: 1158px) {
@@ -766,6 +779,39 @@ footer > div > a {
       url(../images/background.jpg);
     padding: 188px 0;
     max-width: 1440px;
+  }
+
+  .qualities-section {
+    padding: 120px 0;
+  }
+
+  .qualities-list {
+    gap: 24px;
+  }
+
+  .qualities-item {
+    width: calc((100% - 72px) / 4);
+  }
+
+  .subtitle {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+  }
+
+  .text {
+    font-weight: 400;
+  }
+
+  .qualities-item-icons {
+    height: 112px;
+    border-radius: 4px;
+    border: 1px solid #8e8f99;
+    background: #f4f4fd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8px;
   }
 }
 
