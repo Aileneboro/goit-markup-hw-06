@@ -45,16 +45,21 @@ fieldset {
 }
 
 .container {
-  width: 1158px;
+  max-width: 320px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  /* width: 1158px;
   padding-right: 15px;
   padding-left: 15px;
   margin: 0 auto;
-  overflow: hidden;
+  overflow: hidden; */
 }
 
-.section {
+/* .section {
   padding: 120px 0;
-}
+} */
 
 /* HEADER */
 
@@ -183,13 +188,13 @@ ul > li > a {
 
 .big-white-text {
   color: #ffffff;
-  font-size: 56px;
+  font-size: 36px;
   font-weight: 700;
-  line-height: 1.07;
+  line-height: 1.11;
   letter-spacing: 0.02em;
   text-align: center;
-  max-width: 496px;
-  margin: 0 auto 48px auto;
+  max-width: 170px;
+  margin: 0 auto 72px auto;
 }
 
 .title-main-section {
@@ -199,14 +204,11 @@ ul > li > a {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/background.jpg);
+    url(../images/background320.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding: 188px 0;
-  max-width: 1440px;
-  margin-left: auto;
-  margin-right: auto;
+  padding: 72px 0;
 }
 
 /* Qualities */
@@ -727,7 +729,47 @@ footer > div > a {
   pointer-events: auto;
 }
 
-@media (min-resolution: 96dpi) {
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+
+  .title-main-section {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/background768.jpg);
+    padding: 112px 0;
+  }
+
+  .big-white-text {
+    font-size: 56px;
+    line-height: 1.07;
+    max-width: 496px;
+    margin: 0 auto 36px auto;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .title-main-section {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/background.jpg);
+    padding: 188px 0;
+    max-width: 1440px;
+  }
+}
+
+/* @media (min-resolution: 96dpi) {
   .title-main-section {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
@@ -745,4 +787,4 @@ footer > div > a {
       ),
       url("../images/background@x2.jpg");
   }
-}
+} */
