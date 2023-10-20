@@ -1058,3 +1058,63 @@ fieldset {
     width: 264px;
   }
 }
+
+@media (min-resolution: 96dpi) {
+  .title-main-section {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/background320.jpg);
+  }
+}
+
+@media (min-resolution: 192dpi) {
+  .title-main-section {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/background320@2x.jpg);
+  }
+}
+
+@media (min-resolution: 96dpi) and (min-width: 768px) {
+  .title-main-section {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/background768.jpg);
+  }
+}
+
+@media (min-resolution: 192dpi) and (min-width: 768px) {
+  .title-main-section {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/background768@2x.jpg);
+  }
+}
+
+@media (min-resolution: 96dpi) and (min-width: 1158px) {
+  .title-main-section {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/background.jpg);
+  }
+}
+
+@media (min-resolution: 192dpi) and (min-width: 1158px) {
+  .title-main-section {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/background@2x.jpg);
+  }
+}
