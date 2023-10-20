@@ -124,6 +124,7 @@ fieldset {
   flex-direction: column;
   justify-content: space-between;
   overflow: auto;
+  gap: 70px;
   opacity: none;
   visibility: hidden;
   pointer-events: none;
@@ -483,7 +484,7 @@ fieldset {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
-  max-width: 288px;
+  max-width: 266px;
 }
 
 .logo-footer .accent-white {
@@ -871,7 +872,7 @@ fieldset {
     content: "";
     left: 0;
     width: 100%;
-    bottom: -1px;
+    bottom: -25px;
     height: 4px;
     background-color: #404bbf;
     border-radius: 2px;
