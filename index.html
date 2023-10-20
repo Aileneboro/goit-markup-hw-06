@@ -179,6 +179,7 @@
           <ul class="team-list">
             <li class="img-team">
               <img
+                srcset="./images/mark.jpg 1x, ./images/mark@2x.jpg 2x"
                 src="./images/mark.jpg"
                 alt="Mark Guerrero"
                 width="264"
@@ -221,6 +222,7 @@
             </li>
             <li class="img-team">
               <img
+                srcset="./images/tom.jpg 1x, ./images/tom@2x.jpg 2x"
                 src="./images/tom.jpg"
                 alt="Tom Ford"
                 width="264"
@@ -263,6 +265,7 @@
             </li>
             <li class="img-team">
               <img
+                srcset="./images/camila.jpg 1x, ./images/camila@2x.jpg 2x"
                 src="./images/camila.jpg"
                 alt="Camila Garcia"
                 width="264"
@@ -305,6 +308,7 @@
             </li>
             <li class="img-team">
               <img
+                srcset="./images/daniel.jpg 1x, ./images/daniel@2x.jpg 2x"
                 src="./images/daniel.jpg"
                 alt="Daniel Wilson"
                 width="264"
@@ -354,12 +358,30 @@
           <ul class="portfolio-list">
             <li class="img-portfolio">
               <div class="portfolio-overlay">
-                <img
-                  src="./images/banking.jpg"
-                  alt="Banking App"
-                  width="360"
-                  height="300"
-                />
+                <picture>
+                  <source
+                    media="(max-width: 767px) and (min-resolution: 96dpi)"
+                    srcset="./images/banking320.jpg"
+                  />
+                  <source
+                    media="(max-width: 767px) and (min-resolution: 192dpi)"
+                    srcset="./images/background320@2x.jpg"
+                  />
+                  <source
+                    media="(min-width: 768px) and (min-resolution: 96dpi)"
+                    srcset="./images/banking.jpg"
+                  />
+                  <source
+                    media="(min-width: 768px) and (min-resolution: 192dpi)"
+                    srcset="./images/banking@2x.jpg"
+                  />
+                  <img
+                    src="./images/banking.jpg"
+                    alt="Banking App"
+                    width="360"
+                    height="300"
+                  />
+                </picture>
                 <p class="hidden-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
