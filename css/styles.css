@@ -100,6 +100,10 @@ fieldset {
   display: none;
 }
 
+.contacts {
+  display: none;
+}
+
 .burger {
   margin-top: 16px;
   margin-bottom: 16px;
@@ -113,6 +117,7 @@ fieldset {
   height: 100%;
   top: 0;
   left: 0;
+  padding: 0 16px;
   background-color: #fff;
   opacity: none;
   visibility: hidden;
@@ -128,21 +133,59 @@ fieldset {
   width: 24px;
   height: 24px;
   border-radius: 50%;
-  /* position: absolute;
-  right: 24px;
-  top: 24px;
-  width: 24px;
-  height: 24px;
-  border-radius: 50%;
-  background-color: #e7e9fc;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  padding: 0;
-  cursor: pointer;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 0;
+  border: 1px solid #e7e9fc;
+  background-color: transparent;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-menu-icon-close {
+  fill: #2e2f42;
+}
+
+.mobile-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-top: 72px;
+}
+
+.mobile-link {
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+}
+
+.mobile-current {
+  color: #404bbf;
+}
+
+.mobile-menu-contacts {
+  margin-top: 168px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.mobile-contacts-link {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+
+.mobile-social-icons {
+  gap: 40px;
+  margin-top: 48px;
+  justify-content: space-between;
 }
 
 /* SECTION ORDER */
